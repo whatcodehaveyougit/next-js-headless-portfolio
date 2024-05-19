@@ -49,7 +49,7 @@ export default async function Post({ params }) {
     const {comments, commentCount} = await getComments(params.postSlug);
     const seoData = await getSeo('post', params.postSlug);
 
-    let featuredImageUrl = "https://wp.abhinavr.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
+    let featuredImageUrl = "https://sigurdwatt.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
 
     if(postData?.featuredImage) {
         featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl + ")";
@@ -57,7 +57,7 @@ export default async function Post({ params }) {
 
     console.log(comments);
 
-    let jsonSchema = seoData.schema.raw.replace(/https:\/\/wp.abhinavr.com(?!\/wp-content\/uploads)/g, 'https://coolnomad.abhinavr.com/blog')
+    let jsonSchema = seoData.schema.raw.replace(/https:\/\/sigurdwatt.com(?!\/wp-content\/uploads)/g, 'https://coolnomad.abhinavr.com/blog')
 
     return (
         <>
@@ -117,10 +117,10 @@ export default async function Post({ params }) {
                         ))
                     }
                 </ul>
-                
+
             </section>
         </div>
-        
+
         <SiteFooter />
         </>
     );

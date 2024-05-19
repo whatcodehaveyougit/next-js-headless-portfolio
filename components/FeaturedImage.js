@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function FeaturedImage({ post }) {
     let img = '';
 
-    const defaultFeaturedImage = "https://wp.abhinavr.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
+    const defaultFeaturedImage = "https://sigurdwatt.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
     const defaultWidth = "300";
     const defaultHeight = "200";
 
