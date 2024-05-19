@@ -13,15 +13,15 @@ const roboto_slab = Roboto_Slab({ subsets: ['latin'], display: 'swap' });
 console.log(roboto_slab);
 
 export async function generateStaticParams() {
-    const postSlugs = await getPostSlugs();
+    // const postSlugs = await getPostSlugs();
 
-    const paths = postSlugs.map((s) => (
-        {
-            postSlug: s.slug
-        }
-    ));
+    // const paths = postSlugs.map((s) => (
+    //     {
+    //         postSlug: s
+    //     }
+    // ));
 
-    return paths
+    return []
 }
 
 export async function generateMetadata({ params }) {
